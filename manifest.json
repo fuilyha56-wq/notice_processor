@@ -1,0 +1,34 @@
+{
+  "name": "notice_processor",
+  "version": "1.0.0",
+  "description": "通知事件处理器插件 - 拦截 notice 类型消息并允许外部插件注册转换函数，依赖 onebot_expand 作为 OneBot 能力前置",
+  "author": "MoFox Team",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "plugins": ["onebot_expand"],
+    "components": []
+  },
+  "include": [
+    {
+      "component_type": "service",
+      "component_name": "notice_processor",
+      "dependencies": [],
+      "enabled": true
+    },
+    {
+      "component_type": "event_handler",
+      "component_name": "notice_dispatcher",
+      "dependencies": [],
+      "enabled": true
+    }
+  ],
+  "entry_point": "plugin.py",
+  "api_version": {
+    "log_api": "1.0.0",
+    "service_api": "1.0.0"
+  },
+  "python_dependencies": [],
+  "dependencies_required": true,
+  "categories": ["moderation"],
+  "tags": ["onebot", "qq", "notice", "event", "handler"]
+}
