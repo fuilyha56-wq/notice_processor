@@ -38,6 +38,8 @@ class NoticeDispatchEvent(BaseEventHandler):
 
     name = "notice_dispatch_event"
     description = "通知分发事件处理器 - 将 notice 消息路由至已注册的处理函数"
+    handler_name = "notice_dispatch_event"
+    handler_description = "通知分发事件处理器 - 将 notice 消息路由至已注册的处理函数"
     weight = 50
     intercept_message = False
     init_subscribe = [EventType.ON_RECEIVED_OTHER_MESSAGE]

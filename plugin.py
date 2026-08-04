@@ -26,10 +26,10 @@ class NoticeProcessorPlugin(BasePlugin):
 
     plugin_name = "notice_processor"
     plugin_description = "通知消息统一处理框架，支持外部插件注册自定义通知处理函数"
-    plugin_version = "1.0.0"
+    plugin_version = "1.0.1"
 
     configs: list[type] = []
-    dependent_components: list[str] = []
+    dependencies: list[str] = []
 
     def get_components(self) -> list[type]:
         """返回插件组件类。"""

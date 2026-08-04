@@ -1,6 +1,6 @@
 {
   "name": "notice_processor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "通知事件处理器插件 - 拦截 notice 类型消息并允许外部插件注册转换函数，依赖 onebot_expand 作为 OneBot 能力前置",
   "author": "MoFox Team",
   "license": "AGPL-3.0",
@@ -17,7 +17,7 @@
     },
     {
       "component_type": "event_handler",
-      "component_name": "notice_dispatcher",
+      "component_name": "notice_dispatch_event",
       "dependencies": [],
       "enabled": true
     }

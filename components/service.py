@@ -49,6 +49,8 @@ class NoticeProcessorService(BaseService):
 
     name: str = "notice_processor"
     description: str = "通知处理器注册服务，允许外部插件注册自定义通知转换函数"
+    service_name: str = "notice_processor"
+    service_description: str = "通知处理器注册服务，允许外部插件注册自定义通知转换函数"
     version: str = "1.0.0"
 
     async def register(
